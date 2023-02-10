@@ -2,6 +2,9 @@ package com.example.demo.repository;
 
 
 import com.example.demo.model.Usuario;
-import org.springframework.data.jpa.repository.JpaRepository;
-public interface UserRepository extends JpaRepository<Usuario, Long>{
+import org.springframework.data.repository.CrudRepository;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface UserRepository extends CrudRepository<Usuario, Long> {
 }
